@@ -23,6 +23,10 @@ footer{
     background-color: rgba(174,28,39,255);
 }
 
+form{
+  text-align:start;
+}
+
 #titulo{
     color: black;
     text-align: center;
@@ -32,6 +36,7 @@ footer{
 .mensaje_caja{
   width: 200px;
   height: 200px;
+  text-align: center;
 }
 .texto_caja{
   text-align: center;
@@ -52,8 +57,9 @@ footer{
 /* comentario */
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.028), rgba(0, 0, 0, 0.069)),url("https://c4.wallpaperflare.com/wallpaper/757/553/277/amsterdam-wallpaper-preview.jpg");
-  height: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.028), rgba(0, 0, 0, 0.069)), url(https://img2.goodfon.com/wallpaper/nbig/0/6d/gollandiia-niderlandy-amsterdam-kanal.jpg);
+  height: 100%;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,8 +76,9 @@ footer{
 
 .topnav {
     overflow: hidden;
-    justify-content:right;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     flex-direction: row;
   }
   .topnav a {
@@ -81,11 +88,13 @@ footer{
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
   }
   .topnav a:hover {
     color: black ;
   }
-  .topnav a.active {
+/*  .topnav a.active {
     color: black;
   }
+*/
   
