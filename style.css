@@ -127,8 +127,11 @@ form{
   .footer-texto{
     flex-wrap: wrap;
   }
-  footer{
-    height:20%;
+  .footer-texto p {
+    font-size: small;
+  }
+  .footer-texto{
+    justify-content: left;
   }
 }
 @media screen and (max-width:1111px) {

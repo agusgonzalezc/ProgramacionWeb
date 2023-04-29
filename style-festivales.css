@@ -69,3 +69,30 @@ body{background-color: whitesmoke;
     color:black;
     font-size: 15px;
 }
+@media (max-width:650px){
+    /* */
+    body{
+      background-color: gray;
+    }
+    .nav-header{
+      flex-wrap: wrap;
+    }
+    /* eliminar lo que esta en el footer*/
+    .footer-texto{
+        display: none;
+    }
+}
+@media (max-width:750px){
+    body{
+      background-color: gray;
+    }
+    .nav-header{
+      flex-wrap: wrap;
+    }
+    .footer-texto p {
+        font-size: small;
+    }
+    .footer-texto{
+        justify-content: left;
+    }
+}

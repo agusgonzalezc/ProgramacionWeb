@@ -124,7 +124,7 @@ img{
     grid-area: espacio;
 }
 
-/*Meadia queeries */
+/*Media queries */
 
 @media (max-width:600px){
     /* */
@@ -140,14 +140,15 @@ img{
     .footer-texto p {
         font-size: 3px;
     }
-    /* eliminar lo que esta en el footer*/
-    .footer-texto{
-        display: none;
-    }
+    /*Grid*/
     .grid-container{
         grid-template-areas: 'mensaje'
         'informacion'
         'redes';
+    }
+    /* eliminar lo que esta en el footer*/
+    .footer-texto{
+        display: none;
     }
 }
 @media (max-width:730px){
@@ -161,23 +162,3 @@ img{
         font-size: x-small;
     }
 }
-@media (max-width:900px){
-    .nav-header{
-      flex-wrap: wrap;
-    }
-    .footer-texto{
-        flex-wrap: wrap;
-    }
-}
-
-
-
-/* 
-    top: 40%;
-    left: 40%;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(#ae1c28 38%,white 38% 50%,#21468b 50% 99%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-*/

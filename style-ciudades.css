@@ -168,20 +168,30 @@ body {
     transform: none;
     transition: all .3s .3s;
 }
-
+@media (max-width:650px){
+  /* */
+  body{
+    background-color: gray;
+  }
+  .nav-header{
+    flex-wrap: wrap;
+  }
+  /* eliminar lo que esta en el footer*/
+  .footer-texto{
+      display: none;
+  }
+}
 @media screen and (max-width: 800px) {
+  /*Imagenes*/
   .flex-wrapper {
     flex-direction: column;
   }
-  
   .flex-wrapper a:hover {
     flex: 1;
   }
-  
   .flex-wrapper a:hover .overlay {
     background-color: transparent;
   }
-  
   .flex-wrapper .overlay h2,
   .flex-wrapper .overlay p {
     opacity: 1;
@@ -190,5 +200,18 @@ body {
   }
   h3{
     display: none;
+  }
+  /*Resto*/
+  body{
+    background-color: gray;
+  }
+  .nav-header{
+    flex-wrap: wrap;
+  }
+  .footer-texto p {
+      font-size: small;
+  }
+  .footer-texto{
+      justify-content: left;
   }
 }
