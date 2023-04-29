@@ -1,0 +1,103 @@
+body, html, main {
+    height: 100%;
+}
+body{background-color: whitesmoke;
+}
+h1{color: black; text-align: center;}
+form{
+  text-align:start;
+}
+/* Header */
+.contenedor-header{
+  display: flex;
+  flex-direction: column;
+  background-color:#eb8642;
+  flex-grow: 1;
+}
+.contenedor-header h1{
+  text-align: left;
+  padding-left: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  font-size: xx-large;
+  color: white;
+  font-weight:normal;
+}
+.nav-header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav-header a {
+  color: #f1f1f1;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+}
+.nav-header a:hover {
+  color: black ;
+}
+#titulo{
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+}
+.mensaje{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.elemento{
+    color: white;
+}
+.wrapper{
+    display: grid;
+}
+
+.contenedor-footer{
+  display: grid;
+  grid-template-columns: 'div1'
+  'div2'
+  'div3';
+}
+.div-footer{
+  height: 35px;
+  width:100%;
+}
+.div1{
+  background-color:#ae1c28;
+}
+.div2{
+  background-color:white;
+}
+.div3{
+  background-color:#21468b;
+}
+.footer-texto{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-texto p {
+  font-family: 'Courier New', Courier, monospace;
+  color:black;
+  font-size: 15px;
+}
+
+@media (max-width:600px){
+  body{
+    background-color: gray;
+  }
+  img{
+    width: 90%;
+  }
+  .nav-header{
+    flex-wrap: wrap;
+  }
+}

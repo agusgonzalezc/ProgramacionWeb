@@ -1,0 +1,194 @@
+main{
+    height: 100%;
+}
+body{background-color: whitesmoke;
+}
+footer{
+  margin-top: 20px;
+}
+/* Header */
+.contenedor-header{
+  display: flex;
+  flex-direction: column;
+  background-color:#eb8642;
+  flex-grow: 1;
+}
+.contenedor-header h1{
+  text-align: left;
+  padding-left: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  font-size: xx-large;
+  color: white;
+  font-weight:normal;
+}
+.nav-header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav-header a {
+  color: #f1f1f1;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+}
+.nav-header a:hover {
+  color: black ;
+}
+.contenedor-footer{
+  display: grid;
+  grid-template-columns: 'div1'
+  'div2'
+  'div3';
+}
+.div-footer{
+  height: 35px;
+  width:100%;
+}
+.div1{
+  background-color:#ae1c28;
+}
+.div2{
+  background-color:white;
+}
+.div3{
+  background-color:#21468b;
+}
+.footer-texto{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-texto p {
+  font-family: 'Courier New', Courier, monospace;
+  color:black;
+  font-size: 15px;
+}
+#titulo{
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+}
+.mensaje{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.images{
+    width: 500px;
+    height: 300px;
+}
+.elemento{
+    color: white;
+}
+.margenes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* comentario */
+
+body {
+    font: normal 18px/1.5 "Helvetica Neue", sans-serif;
+}
+.flex-wrapper {
+    display: flex;
+    height: 100vh;
+}
+.flex-wrapper a {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: flex .4s;
+}
+.flex-wrapper .one {
+    background-image: url(https://cms.finnair.com/resource/blob/751908/4b2f25f2f1d9572a1bf5445d84ff4e92/amsterdam-main-data.jpg);
+    background-color: red;
+}
+.flex-wrapper .two {
+    background-image: url(https://img.theculturetrip.com/wp-content/uploads/2022/01/ww3aja-1.jpg);
+    background-color: green;
+}
+.flex-wrapper .three {
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/01/17/ppawpd.jpg);
+    background-color: steelblue;
+}
+.flex-wrapper .four {
+    background-image: url(https://www.holland.com/upload_mm/d/f/c/69557_fullimage_sint-servaas-brug-maas-maastricht-stad-eighty8things-1360%20copy.jpg);
+    background-color: orange;
+}
+.flex-wrapper .five {
+    background-image: url(https://images.hola.com/imagenes/viajes/2017051994762/Utrecht-guia-48-horas-Holanda/0-450-435/04-Calles-de-Utrecht-t.jpg);
+    background-color: tomato;
+}
+.flex-wrapper a:hover {
+    flex: 3;
+}
+.flex-wrapper .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color .4s;
+}
+.flex-wrapper a:hover .overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+.flex-wrapper .overlay-inner * {
+    visibility: hidden;
+    opacity: 0;
+    transform-style: preserve-3d;
+}
+.flex-wrapper .overlay h2 {
+    transform: translate3d(0, -60px, 0);
+}
+.flex-wrapper .overlay p {
+    transform: translate3d(0, 60px, 0);
+}
+.flex-wrapper a:hover .overlay-inner * {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: all .3s .3s;
+}
+
+@media screen and (max-width: 800px) {
+  .flex-wrapper {
+    flex-direction: column;
+  }
+  
+  .flex-wrapper a:hover {
+    flex: 1;
+  }
+  
+  .flex-wrapper a:hover .overlay {
+    background-color: transparent;
+  }
+  
+  .flex-wrapper .overlay h2,
+  .flex-wrapper .overlay p {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  h3{
+    display: none;
+  }
+}

@@ -5,22 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-contacto.css">
 </head>
 <body>
     <header> 
-        <h1>PAISES BAJOS</h1>
-        <div class="topnav">
-            <a class="active" href="index.html">Inicio</a>
-            <a href="./ciudades.html">Ciudades</a>
-            <a href="/festivales.html">Festivales</a>
-            <a href="./gastronomia.html">Gastronomia</a>
-            <a href="./transporte.html">Transporte</a>
-            <a href="./contacto.html">Contacto</a>
+        <div class="contenedor-header">
+            <h1>VISITA LOS PAISES BAJOS</h1>
+            <div class="nav-header">
+                <a class="active" href="index.html">INICIO</a>
+                <a href="./historia.html">HISTORIA</a>
+                <a href="./ciudades.html">CIUDADES</a>
+                <a href="/festivales.html">FESTIVALES</a>
+                <a href="./gastronomia.html">GASTRONOMIA</a>
+                <a href="./transporte.html">TRANSPORTE</a>
+                <a href="./contacto.html">CONTACTO</a>
+            </div>
+            </div>
         </div>
     </header>
-    <p>Mail: agusgonzalez@itba.edu.ar</p>
-    <p>Telefono: 11-9999-9999</p>
-    <p>Pagina creada por Agustina Gonzalez Crespo</p>
+    <main>
+        <br>
+        <div class="grid-container">
+            <div class="item1">
+                <h1 id="titulo">Dejanos tu mensaje</h1>
+                <form action="" method="post" class="mensaje">
+                    <label for="nombre">Nombre:<br>
+                    <input type="text" placeholder="Nombre" name="user" class="texto-caja"></label><br><br>
+                    <label for="mail">Mail:<br>
+                    <input type="email" placeholder="Mail" class="texto-caja"></label><br><br>
+                    <label for="mensaje">Mensaje:<br>
+                    <input type="text" class="mensaje-caja" placeholder="Mensaje"></label><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="item2">
+                <h1>Tambien nos podes contactar por estos medios</h1>
+                <p>Mail: agusgonzalez@itba.edu.ar</p>
+                <p>Telefono: 11-9999-9999</p>
+                <p>Nuestra Redes:</p>
+            </div>
+            <div class="grid-redes flex-redes">
+                <a href="https://www.instagram.com/netherlands.official/?hl=es"><img src="https://tcoyd.org/wp-content/uploads/2020/12/instagram-circle-logo-transparent-hd-png-download-1024x1024-instagram-circle-png-840_880.jpg" alt=""></a>
+                <a href="https://twitter.com/NLNetherlands?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt=""></a>
+                <a href="https://www.youtube.com/visitholland"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/YouTube_social_red_circle_%282017%29.svg/2048px-YouTube_social_red_circle_%282017%29.svg.png" alt=""></a>
+            </div>
+            <div class="espacio">
+                <p>                         </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="div-footer div1"></div>
+            <div class="div-footer div2">
+                <div class="footer-texto">
+                    <p>Copyright © 2023</p>
+                    <p>All rights reserved</p>
+                    <p>Pagina creada por Agustina Gonzalez Crespo</p>
+                </div>
+            </div>
+            <div class="div-footer div3"></div>
+        </div>
+    </footer>
 </body>
 </html>
