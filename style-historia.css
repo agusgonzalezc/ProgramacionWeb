@@ -1,9 +1,22 @@
 body, html, main {
     height: 100%;
 }
-
 body{background-color: whitesmoke;
-}  
+}
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+p{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+main h1{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 /* Header */
 .contenedor-header{
     display: flex;
@@ -16,7 +29,7 @@ body{background-color: whitesmoke;
     padding-left: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    font-size: xx-large;
+    font-size: 28px;
     color: white;
     font-weight:normal;
 }
@@ -33,7 +46,8 @@ body{background-color: whitesmoke;
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
+    font-size: 20px;
+    font-weight: 150;
 }
 .nav-header a:hover {
     color: black ;

@@ -15,7 +15,7 @@ body{background-color: whitesmoke;
     padding-left: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    font-size: xx-large;
+    font-size: 28px;
     color: white;
     font-weight:normal;
 }
@@ -32,7 +32,8 @@ body{background-color: whitesmoke;
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
+    font-size: 20px;
+    font-weight: 150;
 }
 .nav-header a:hover {
     color: black ;

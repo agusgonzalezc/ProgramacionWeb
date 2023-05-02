@@ -24,7 +24,7 @@ img{
     padding-left: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    font-size: xx-large;
+    font-size: 28px;
     color: white;
     font-weight:normal;
 }
@@ -41,7 +41,8 @@ img{
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
+    font-size: 20px;
+    font-weight: 150;
 }
 .nav-header a:hover {
     color: black ;
@@ -144,7 +145,8 @@ img{
     .grid-container{
         grid-template-areas: 'mensaje'
         'informacion'
-        'redes';
+        'redes'
+        'espacio';
     }
     /* eliminar lo que esta en el footer*/
     .footer-texto{
@@ -161,4 +163,11 @@ img{
     .footer-texto p {
         font-size: x-small;
     }
+    .grid-container{
+        grid-template-areas: 'mensaje'
+        'informacion'
+        'redes'
+        'espacio';
+    }
+    
 }

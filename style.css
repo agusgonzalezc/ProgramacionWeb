@@ -8,6 +8,7 @@ body, html, main {
 body{background-color: whitesmoke;
 }
 h1{color: black; text-align: center;}
+
 .contenedor-footer{
   display: grid;
   grid-template-rows: 'div1 div2 div3';
@@ -84,6 +85,7 @@ form{
     flex-direction: row;
     justify-content: flex-end;
     flex-direction: row;
+    padding-top: 8x;
 }
 .topnav a {
     float: left;
@@ -92,7 +94,7 @@ form{
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
+    font-size: 22px;
 }
 .topnav a:hover {
     color: black ;
