@@ -1,12 +1,20 @@
 /* */
 body{background-color: whitesmoke;
 }
+main{
+    height: 100%;
+    padding: 20px;
+}
 footer{
     margin-top: 20px;
 }
 img{
     height:35px;
     width:35px;
+}
+p{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* Header */
 .contenedor-header{
@@ -17,20 +25,18 @@ img{
 }
 .contenedor-header h1{
     text-align: left;
-    padding-left: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     font-size: 28px;
     color: white;
     font-weight:normal;
+    padding-top: 20px;
+    padding-left: 20px;
 }
-.nav-header {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.navbar-nav{
+    margin-left: auto;
 }
-.nav-header a {
+.navbar .navbar-nav .nav-link{
     color: #f1f1f1;
     float: left;
     text-align: center;
@@ -40,10 +46,6 @@ img{
     font-size: 20px;
     font-weight: 150;
 }
-.nav-header a:hover {
-    color: black ;
-}
-
 /* Footer */
 .contenedor-footer{
     display: grid;
@@ -82,9 +84,13 @@ img{
     width: 200px;
     height: 200px;
     text-align: center;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .texto-caja{
     text-align: center;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Grid */
@@ -101,10 +107,12 @@ img{
     background-color: gainsboro;
     padding-left: 20px;
     padding-bottom: 10px;
+    padding-top: 20px;
 }
 .item2{
     grid-area: informacion;
     padding-left: 20px;
+    padding-top: 20px;
 }
 .grid-redes{
     grid-area: redes;
@@ -119,6 +127,19 @@ img{
 }
 .espacio{
     grid-area: espacio;
+}
+.grid-container h1{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.label{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.mensaje{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /*Media queries */

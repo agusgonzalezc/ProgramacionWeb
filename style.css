@@ -57,9 +57,7 @@ form{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-/* comentario */
-
+/*imagen fondo */
 .hero-imagen {
   background-image: linear-gradient(rgba(0, 0, 0, 0.028), rgba(0, 0, 0, 0.069)), url(https://img2.goodfon.com/wallpaper/nbig/0/6d/gollandiia-niderlandy-amsterdam-kanal.jpg);
   height: 100%;
@@ -78,7 +76,24 @@ form{
   color: whitesmoke;
   font-family: 'Courier New', Courier, monospace;
 }
+/* topnav */
+.navbar-nav{
+  margin-left: auto;
+  padding-top: 20px;
+}
+.navbar .navbar-nav .nav-link{
+  color: #f1f1f1;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 150;
+}
 
+
+/*
 .topnav {
     overflow: hidden;
     display: flex;
@@ -99,10 +114,8 @@ form{
 .topnav a:hover {
     color: black ;
 }
-/*  .topnav a.active {
-    color: black;
-  }
 */
+/* comentario */
 
 @media (max-width:600px){
   body{

@@ -1,6 +1,20 @@
 body{background-color: whitesmoke;
 }
-h1{color: black; text-align: center;}
+main{
+  height: 100%;
+  padding: 20px;
+}
+main h1{
+  color: black; 
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  font-weight: bold;
+}
+main p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
 form{
   text-align:start;
 }
@@ -13,20 +27,18 @@ form{
 }
 .contenedor-header h1{
   text-align: left;
-  padding-left: 20px;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   font-size: 28px;
   color: white;
   font-weight:normal;
+  padding-top: 20px;
+  padding-left: 20px;
 }
-.nav-header {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.navbar-nav{
+  margin-left: auto;
 }
-.nav-header a {
+.navbar .navbar-nav .nav-link{
   color: #f1f1f1;
   float: left;
   text-align: center;
@@ -35,9 +47,6 @@ form{
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: 150;
-}
-.nav-header a:hover {
-  color: black ;
 }
 #titulo{
     color: black;

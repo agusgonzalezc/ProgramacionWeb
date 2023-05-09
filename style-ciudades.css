@@ -1,10 +1,21 @@
 main{
-    height: 100%;
+  height: 100%;
+  padding: 20px;
 }
 body{background-color: whitesmoke;
 }
 footer{
   margin-top: 20px;
+}
+p{
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+main h1{
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
 }
 /* Header */
 .contenedor-header{
@@ -15,20 +26,18 @@ footer{
 }
 .contenedor-header h1{
   text-align: left;
-  padding-left: 20px;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   font-size: 28px;
   color: white;
   font-weight:normal;
+  padding-top: 20px;
+  padding-left: 20px;
 }
-.nav-header {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.navbar-nav{
+  margin-left: auto;
 }
-.nav-header a {
+.navbar .navbar-nav .nav-link{
   color: #f1f1f1;
   float: left;
   text-align: center;
@@ -37,9 +46,6 @@ footer{
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: 150;
-}
-.nav-header a:hover {
-  color: black ;
 }
 .contenedor-footer{
   display: grid;
@@ -97,74 +103,89 @@ footer{
 /* comentario */
 
 .flex-wrapper {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 .flex-wrapper a {
-    position: relative;
-    flex: 1;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: flex .4s;
+  position: relative;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: flex .4s;
 }
 .flex-wrapper .one {
-    background-image: url(https://cms.finnair.com/resource/blob/751908/4b2f25f2f1d9572a1bf5445d84ff4e92/amsterdam-main-data.jpg);
-    background-color: red;
+  background-image: url(https://cms.finnair.com/resource/blob/751908/4b2f25f2f1d9572a1bf5445d84ff4e92/amsterdam-main-data.jpg);
+  background-color: red;
 }
 .flex-wrapper .two {
-    background-image: url(https://img.theculturetrip.com/wp-content/uploads/2022/01/ww3aja-1.jpg);
-    background-color: green;
+  background-image: url(https://img.theculturetrip.com/wp-content/uploads/2022/01/ww3aja-1.jpg);
+  background-color: green;
 }
 .flex-wrapper .three {
     background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/01/17/ppawpd.jpg);
     background-color: steelblue;
 }
 .flex-wrapper .four {
-    background-image: url(https://www.holland.com/upload_mm/d/f/c/69557_fullimage_sint-servaas-brug-maas-maastricht-stad-eighty8things-1360%20copy.jpg);
-    background-color: orange;
+  background-image: url(https://www.holland.com/upload_mm/d/f/c/69557_fullimage_sint-servaas-brug-maas-maastricht-stad-eighty8things-1360%20copy.jpg);
+  background-color: orange;
 }
 .flex-wrapper .five {
-    background-image: url(https://images.hola.com/imagenes/viajes/2017051994762/Utrecht-guia-48-horas-Holanda/0-450-435/04-Calles-de-Utrecht-t.jpg);
-    background-color: tomato;
+  background-image: url(https://images.hola.com/imagenes/viajes/2017051994762/Utrecht-guia-48-horas-Holanda/0-450-435/04-Calles-de-Utrecht-t.jpg);
+  background-color: tomato;
 }
 .flex-wrapper a:hover {
-    flex: 3;
+  flex: 3;
 }
 .flex-wrapper .overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: background-color .4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color .4s;
 }
 .flex-wrapper a:hover .overlay {
-    background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .5);
 }
 .flex-wrapper .overlay-inner * {
-    visibility: hidden;
-    opacity: 0;
-    transform-style: preserve-3d;
+  visibility: hidden;
+  opacity: 0;
+  transform-style: preserve-3d;
 }
 .flex-wrapper .overlay h2 {
-    transform: translate3d(0, -60px, 0);
+  transform: translate3d(0, -60px, 0);
+  font-family: 'Courier New', Courier, monospace;
+  color: #f1f1f1;
+  font-weight: normal;
+  font-size: 30px;
 }
 .flex-wrapper .overlay p {
-    transform: translate3d(0, 60px, 0);
+  transform: translate3d(0, 60px, 0);
+  font-family: 'Courier New', Courier, monospace;
+  color: #f1f1f1;
+  font-weight: normal;
+  font-size: 16px;
 }
 .flex-wrapper a:hover .overlay-inner * {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    transition: all .3s .3s;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: all .3s .3s;
+}
+.flex-wrapper h3{
+  font-size: 20px;
+  color: rgb(106, 106, 106);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  padding-top: 20px;
 }
 @media (max-width:650px){
   /* */
@@ -195,9 +216,41 @@ footer{
     opacity: 1;
     visibility: visible;
     transform: none;
+    font-weight: bolder;
   }
-  h3{
-    display: none;
+  .flex-wrapper .one{
+    background-color: rgba(0, 0, 0, .5);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.442)),url(https://cms.finnair.com/resource/blob/751908/4b2f25f2f1d9572a1bf5445d84ff4e92/amsterdam-main-data.jpg);
+  }
+  .flex-wrapper .two {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.442)),url(https://img.theculturetrip.com/wp-content/uploads/2022/01/ww3aja-1.jpg);
+  }
+  .flex-wrapper .three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.442)),url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/01/17/ppawpd.jpg);
+  }
+  .flex-wrapper .four {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.442)), url(https://www.holland.com/upload_mm/d/f/c/69557_fullimage_sint-servaas-brug-maas-maastricht-stad-eighty8things-1360%20copy.jpg);
+  }
+  .flex-wrapper .five {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.442)), url(https://images.hola.com/imagenes/viajes/2017051994762/Utrecht-guia-48-horas-Holanda/0-450-435/04-Calles-de-Utrecht-t.jpg);
+  }
+  .flex-wrapper h3{
+    color: #f1f1f1;
+    font-weight: normal;
+  }
+  .flex-wrapper .overlay h2 {
+    transform: translate3d(0, 15px, 0);
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .flex-wrapper .overlay p {
+    transform: translate3d(0, 18px, 0);
+    font-size: 16px;
+    font-weight: normal;    
+  }
+  .flex-wrapper a:hover .overlay-inner *{
+    opacity: 1;
   }
   /*Resto*/
   body{
