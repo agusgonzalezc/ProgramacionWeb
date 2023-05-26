@@ -2,6 +2,9 @@ main{
   height: 100%;
   padding: 20px;
 }
+header{
+  background-color: #eb8642;
+}
 body{background-color: whitesmoke;
 }
 footer{
@@ -47,14 +50,13 @@ main h1{
   font-size: 20px;
   font-weight: 150;
 }
+/* FOOTER */
 .contenedor-footer{
   display: grid;
-  grid-template-columns: 'div1'
-  'div2'
-  'div3';
+  grid-template-rows: 'div1 div2 div3';
 }
 .div-footer{
-  height: 35px;
+  height:35px;
   width:100%;
 }
 .div1{
@@ -72,39 +74,17 @@ main h1{
   flex: 1;
   justify-content: space-around;
   align-items: center;
+  margin-top: 10px;
 }
 .footer-texto p {
   font-family: 'Courier New', Courier, monospace;
   color:black;
   font-size: 15px;
 }
-#titulo{
-    color: black;
-    text-align: center;
-    font-size: xx-large;
-}
-.mensaje{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.images{
-    width: 500px;
-    height: 300px;
-}
-.elemento{
-    color: white;
-}
-.margenes{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 /* comentario */
-
 .flex-wrapper {
   display: flex;
-  height: 100vh;
+  height: 90vh;
 }
 .flex-wrapper a {
   position: relative;
@@ -256,13 +236,7 @@ main h1{
   body{
     background-color: gray;
   }
-  .nav-header{
-    flex-wrap: wrap;
-  }
   .footer-texto p {
-      font-size: small;
-  }
-  .footer-texto{
-      justify-content: left;
+    font-size: small;
   }
 }

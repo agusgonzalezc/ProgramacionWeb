@@ -1,80 +1,141 @@
-body, html, main {
-    height: 100%;
-}
 body{background-color: whitesmoke;
 }
+header{
+  background-color: #eb8642;
+}
 main{
-    height: 100%;
-    padding: 20px;
+  padding: 20px;
 }
 main h1{
-    color: black; 
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    font-weight: bold;
+  color: black; 
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  font-weight: bold;
 }
 main p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
 }
 /* Header */
 .contenedor-header{
-    display: flex;
-    flex-direction: column;
-    background-color:#eb8642;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color:#eb8642;
+  flex-grow: 1;
 }
 .contenedor-header h1{
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    font-size: 28px;
-    color: white;
-    font-weight:normal;
-    padding-top: 20px;
-    padding-left: 20px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+  font-weight:normal;
+  padding-top: 20px;
+  padding-left: 20px;
 }
+/* NAV-BAR */
 .navbar-nav{
-    margin-left: auto;
+  margin-left: auto;
 }
 .navbar .navbar-nav .nav-link{
-    color: #f1f1f1;
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: 150;
+  color: #f1f1f1;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 150;
 }
+/* CARUSEL */
+.carousel-indicators [data-bs-target]{
+  position: relative;
+  width: 80px;
+  height: 6px;
+  border: none;
+  border-radius: 10px;
+}
+.carousel-indicators [data-bs-target] span {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ae1c28;
+  border-radius: inherit;
+}
+.carousel-item{
+  height: 75vh;
+  background: #777;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.carusel-contenedor{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 20px;
+}
+#carousel p{
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color:whitesmoke
+}
+#carousel h1{
+  text-align: center;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+}
+.carousel-item:nth-child(1){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://www.iamexpat.nl/sites/default/files/styles/ogimage_thumb/public/cycling-netherlands-dutch-city.jpg)
+}
+.carousel-item:nth-child(2){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://holland-explorer.com/wp-content/uploads/2020/07/amsterdam-public-transport-tram.jpg)
+}
+.carousel-item:nth-child(3){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://tensholanda.com/wp-content/uploads/2022/03/train-netherlands.jpeg)
+}
+.carousel-item:nth-child(4){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bus-ams.jpeg)
+}
+.carousel-item:nth-child(5){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://i0.wp.com/wheelchairtravel.org/wp-content/uploads/2015/07/ams-canal-cruise-feature-onsite.jpg?fit=1400%2C800&ssl=1)
+}
+
+/* FOOTER */
 .contenedor-footer{
     display: grid;
-    grid-template-columns: 'div1'
-    'div2'
-    'div3';
-}
-.div-footer{
-    height: 35px;
+    grid-template-rows: 'div1 div2 div3';
+  }
+  .div-footer{
+    height:35px;
     width:100%;
-}
-.div1{
+  }
+  .div1{
     background-color:#ae1c28;
-}
-.div2{
+  }
+  .div2{
     background-color:white;
-}
-.div3{
+  }
+  .div3{
     background-color:#21468b;
-}
-.footer-texto{
+  }
+  .footer-texto{
     display: flex;
     flex-direction: row;
     flex: 1;
     justify-content: space-around;
     align-items: center;
-}
-.footer-texto p {
+    margin-top: 10px;
+  }
+  .footer-texto p {
     font-family: 'Courier New', Courier, monospace;
     color:black;
     font-size: 15px;
@@ -83,9 +144,6 @@ main p{
     /* */
     body{
       background-color: gray;
-    }
-    .nav-header{
-      flex-wrap: wrap;
     }
     /* eliminar lo que esta en el footer*/
     .footer-texto{
@@ -96,13 +154,7 @@ main p{
     body{
       background-color: gray;
     }
-    .nav-header{
-      flex-wrap: wrap;
-    }
     .footer-texto p {
         font-size: small;
-    }
-    .footer-texto{
-        justify-content: left;
     }
 }

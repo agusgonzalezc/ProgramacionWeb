@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ggg</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-intento.css">
 </head>
 <body> 
     <div class="hero-image">
@@ -25,11 +25,26 @@
         </div>
     </div>
     <main>
-        <h1 id="titulo" class="margenes"> En esta pagina vas a poder conocer todo lo que podes hacer en el pais.</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis debitis deserunt, eaque reiciendis exercitationem dolor accusamus vitae, consequuntur neque porro, accusantium totam. Reprehenderit, voluptate dignissimos veritatis velit quasi consectetur?</p>
-        <img src="https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2019/01/Hand-Luggage-Only-15-8.jpg?w=1600&ssl=1/" class="images" alt="">
+        <form action="" method="post" class="mensaje">
+            <label for="nombre">Nombre:<br>
+            <input type="text" placeholder="Nombre" name="user" class="texto-caja"></label><br><br>
+            <label for="mail">Mail:<br>
+            <input type="email" placeholder="Mail" class="texto-caja"></label><br><br>
+            <label for="mensaje">Mensaje:<br>
+            <input type="text" class="mensaje-caja" placeholder="Mensaje"></label><br><br>
+            <button class="button" onclick="show('popup')">Enviar</button>
+        </form>
+        <button class="button" onclick="show('popup')">Enviar</button>
+        <div id="popup" class="popup">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Eo_circle_orange_checkmark.svg/2048px-Eo_circle_orange_checkmark.svg.png" alt="">
+            <h2>Muchas gracias por contactarse con nosotros!</h2>
+            <p>Te estaremos contactando en la brevedad</p>
+            <button href="#" onclick="hide('popup')">cerrar</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit placeat veniam quasi laboriosam veritatis maiores quam, voluptates natus deleniti in, non nisi odio a voluptatibus ut, similique illum laborum vero!</p>
     </main>
 </body>
+<script src="script.js"></script>
 </html>
 
 <!---.grid-container{
@@ -71,4 +86,10 @@
     z-index: 1;
     left:70px
 }
-.item5{-->
+.item5{
+    
+
+
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Eo_circle_orange_checkmark.svg/2048px-Eo_circle_orange_checkmark.svg.png" alt="">
+-->

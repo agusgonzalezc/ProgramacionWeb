@@ -1,8 +1,11 @@
 body{background-color: whitesmoke;
 }
+header{
+  background-color: #eb8642;
+}
 main{
-  height: 100%;
   padding: 20px;
+  height: 100%;
 }
 main h1{
   color: black; 
@@ -14,9 +17,6 @@ main h1{
 main p{
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
-}
-form{
-  text-align:start;
 }
 /* Header */
 .contenedor-header{
@@ -48,31 +48,79 @@ form{
   font-size: 20px;
   font-weight: 150;
 }
-#titulo{
-    color: black;
-    text-align: center;
-    font-size: xx-large;
+/* COMIDAS*/
+#comidas{
+  color: black;
+  text-align: center;
+  padding: 20px 0px;
 }
-.mensaje{
+#comidas .contenedor-comidas{
+  height: 90%;
+}
+#comidas .comida a{
+  color: white;
+  text-decoration: none;
+}
+#comidas h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+}
+#comidas p{
+  display: none;
+}
+#comidas .comida{
+  height: 90%;
+  display: grid;
+  grid-template-areas: 'bitterballen stroopwafel papas-fritas'
+  'quesos oliebollen pannenkoeken';
+  gap: 10px;
+  padding: 10px;
+}
+#comidas .carta{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 15px;
+  height: 25em;
 }
-.elemento{
-    color: white;
+#comidas .carta h2{
+  font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
 }
-.wrapper{
-    display: grid;
+.carta:first-child{
+  grid-area:bitterballen;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("https://braisedanddeglazed.com/wp-content/uploads/2020/12/Bitterballen-Second-Edit-6.jpg");
 }
-/*Footer*/
+.carta:nth-child(2){
+  grid-area:stroopwafel;
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://gastronomiaycia.republica.com/wp-content/uploads/2019/01/que_es_stroopwafel.jpg");
+}
+.carta:nth-child(3){
+  grid-area:papas-fritas;
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://img.freepik.com/fotos-premium/papas-fritas-o-papas-fritas-salsa-curry-amsterdam-holanda-septiembre-2017_552127-1921.jpg");
+}
+.carta:nth-child(4){
+  grid-area:quesos;
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.kaashandelremijn.nl/wp-content/uploads/2017/08/header_kaashandel.jpg");
+}
+.carta:nth-child(5){
+  grid-area:oliebollen;
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.boodschappen.nl/app/uploads/recipe_images/3by4_med/basisrecept-oliebollen.jpg");
+}
+.carta:nth-child(6){
+  grid-area:pannenkoeken;
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.koopmans.com/Recepten/P/2999/image-thumb__2999__heading-block/PannenkoekStapeltje001.jpg");
+}
+/* FOOTER */
 .contenedor-footer{
   display: grid;
-  grid-template-columns: 'div1'
-  'div2'
-  'div3';
+  grid-template-rows: 'div1 div2 div3';
 }
 .div-footer{
-  height: 35px;
+  height:35px;
   width:100%;
 }
 .div1{
@@ -90,6 +138,7 @@ form{
   flex: 1;
   justify-content: space-around;
   align-items: center;
+  margin-top: 10px;
 }
 .footer-texto p {
   font-family: 'Courier New', Courier, monospace;
@@ -99,14 +148,13 @@ form{
 
 @media (max-width:650px){
   /* */
-  body{
-    background-color: gray;
-  }
-  .nav-header{
-    flex-wrap: wrap;
-  }
-  img{
-    width: 90%;
+  #comidas .comida{
+    grid-template-areas:'bitterballen'
+    'stroopwafel'
+    'papas-fritas'
+    'quesos' 
+    'oliebollen'
+    'pannenkoeken';
   }
   /* eliminar lo que esta en el footer*/
   .footer-texto{
@@ -117,39 +165,7 @@ form{
   body{
     background-color: gray;
   }
-  .nav-header{
-    flex-wrap: wrap;
-  }
   .footer-texto p {
       font-size: small;
   }
-  .footer-texto{
-      justify-content: left;
-  }
-}
-
-
-
-/*EXTRAS*/
-.container-card{
-  display: grid;
-
-}
-.card{
-  grid-area: card;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 35%;
-  border-radius: 5px;
-}
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.card img {
-  border-radius: 5px 5px 0 0;
-  height: 30%;
-  width: 30%;
-}
-.texto-card {
-  padding: 2px 16px;
 }

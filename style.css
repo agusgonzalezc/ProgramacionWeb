@@ -4,40 +4,12 @@
 body, html, main {
     height: 100%;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{background-color: whitesmoke;
 }
 h1{color: black; text-align: center;}
-
-.contenedor-footer{
-  display: grid;
-  grid-template-rows: 'div1 div2 div3';
-}
-.div-footer{
-  height:35px;
-  width:100%;
-}
-.div1{
-  background-color:#ae1c28;
-}
-.div2{
-  background-color:white;
-}
-.div3{
-  background-color:#21468b;
-}
-.footer-texto{
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  justify-content: space-around;
-  align-items: center;
-}
-.footer-texto p {
-  font-family: 'Courier New', Courier, monospace;
-  color:black;
-  font-size: 15px;
-}
 form{
   text-align:start;
 }
@@ -47,8 +19,8 @@ form{
     font-size: xx-large;
 }
 .images{
-    width: 500px;
-    height: 300px;
+  width: 500px;
+  height: 300px;
 }
 .elemento{
     color: white;
@@ -60,12 +32,12 @@ form{
 /*imagen fondo */
 .hero-imagen {
   background-image: linear-gradient(rgba(0, 0, 0, 0.028), rgba(0, 0, 0, 0.069)), url(https://img2.goodfon.com/wallpaper/nbig/0/6d/gollandiia-niderlandy-amsterdam-kanal.jpg);
-  height: 100%;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 .hero-texto {
   text-align: center;
@@ -91,8 +63,98 @@ form{
   font-size: 20px;
   font-weight: 150;
 }
-
-
+/* SECCIONES */
+#secciones{
+  background: linear-gradient(rgba(227, 104, 16, 0.434), rgb(230, 125, 6));
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+#secciones .contenedor-seccion{
+  height: 90%;
+}
+#secciones h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+}
+#secciones p{
+  display: none;
+}
+#secciones button{
+  background-color:#eb8642;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+#secciones .seccion{
+  display: grid;
+  grid-template-areas: 'historia ciudades'
+  'gastronomia transporte';
+  height: 100%;
+  gap: 10px;
+  padding: 10px;
+}
+#secciones .carta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 15px;
+}
+#secciones .carta h2{
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+}
+.carta:first-child{
+  grid-area:historia;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://c8.alamy.com/compes/eb6j13/francia-holland-history-del-siglo-xix-las-tropas-de-napoleon-entrando-en-amsterdam-eb6j13.jpg");
+}
+.carta:nth-child(2){
+  grid-area:ciudades;
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://tipsparatuviaje.com/wp-content/uploads/2019/11/amsterdam-ho.jpg");
+}
+.carta:nth-child(3){
+  grid-area:gastronomia;
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.viajaraholanda.com/img/gastronomia-holanda.jpg");
+}
+.carta:nth-child(4){
+  grid-area:transporte;
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://exploraholanda.com/wp-content/uploads/2018/01/tranvia-amsterdam-holanda-1.jpg");
+}
+/* FOOTER */
+.contenedor-footer{
+  display: grid;
+  grid-template-rows: 'div1 div2 div3';
+}
+.div-footer{
+  height:35px;
+  width:100%;
+}
+.div1{
+  background-color:#ae1c28;
+}
+.div2{
+  background-color:white;
+}
+.div3{
+  background-color:#21468b;
+}
+.footer-texto{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-texto p {
+  font-family: 'Courier New', Courier, monospace;
+  color:black;
+  font-size: 15px;
+}
 /*
 .topnav {
     overflow: hidden;
@@ -121,14 +183,11 @@ form{
   body{
     background-color: gray;
   }
-  .topnav{
-    flex-wrap: wrap;
-  }
   .footer-texto{
-      justify-content: left;
+    justify-content: left;
   }
   .footer-texto p {
-      font-size: 3px;
+    font-size: 3px;
   }
   /* eliminar lo que esta en el footer*/
   .footer-texto{
@@ -136,25 +195,29 @@ form{
   }
 }
 @media screen and (max-width:750px){
-  .topnav{
-    flex-wrap: wrap;
-  }
-  .footer-texto{
-    flex-wrap: wrap;
-  }
   .footer-texto p {
     font-size: small;
   }
-  .footer-texto{
-    justify-content: left;
+  #secciones p{
+    display: block;
+  }
+  #secciones .seccion{
+    grid-template-areas: 'historia'
+    'ciudades'
+    'gastronomia'
+    'transporte';
+  }
+  #secciones .carta{
+    padding:20px;
   }
 }
-@media screen and (max-width:1111px) {
-  .topnav{
-    flex-wrap: wrap;
-  }
-  .footer-texto{
-    flex-wrap: wrap;
+@media screen and (min-width:750px) {
+  #secciones{
+    height: 100%;
   }
 }
+
+
+/*  
+*/
 
