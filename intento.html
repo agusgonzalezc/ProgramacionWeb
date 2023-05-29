@@ -25,15 +25,59 @@
         </div>
     </div>
     <main>
-        <form action="" method="post" class="mensaje">
-            <label for="nombre">Nombre:<br>
-            <input type="text" placeholder="Nombre" name="user" class="texto-caja"></label><br><br>
-            <label for="mail">Mail:<br>
-            <input type="email" placeholder="Mail" class="texto-caja"></label><br><br>
-            <label for="mensaje">Mensaje:<br>
-            <input type="text" class="mensaje-caja" placeholder="Mensaje"></label><br><br>
-            <button class="button" onclick="show('popup')">Enviar</button>
+		<form action="" method="post" class="mensaje" id="formulario">
+            <div class="formulario-grupo" id="grupo-nombre">
+				<label for="nombre" class="formulario-label">Nombre</label>
+				<div class="formulario-grupo-input">
+					<input type="text" class="formulario-input" name="nombre" id="nombre" placeholder="Jose Suarez">
+					<i class="formulario-validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario-input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+			</div>
+            <!-- Grupo: Correo Electronico -->
+			<div class="formulario-grupo" id="grupo-correo">
+				<label for="email" class="formulario-label">Correo Electrónico</label>
+				<div class="formulario-grupo-input">
+					<input type="email" class="formulario-input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario-validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario-input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario-grupo" id="grupo-telefono">
+				<label for="telefono" class="formulario-label">Teléfono</label>
+				<div class="formulario-grupo-input">
+					<input type="text" class="formulario-input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario-validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario-input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario-grupo" id="grupo-terminos">
+				<label class="formulario-label">
+					<input class="formulario-checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+            </div>
+            
+			<div class="formulario-mensaje" id="formulario-mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario-grupo">
+				<button type="submit" class="formulario-btn">Enviar</button>
+                <div id="popup" class="popup">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Eo_circle_orange_checkmark.svg/2048px-Eo_circle_orange_checkmark.svg.png" alt="">
+                    <h2>Muchas gracias por contactarse con nosotros!</h2>
+                    <p>Te estaremos contactando en la brevedad</p>
+                    <button href="#" onclick="hide('popup')">cerrar</button>
+                </div>
+				<p class="formulario-mensaje-exito" id="formulario-mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
         </form>
+        <br>
         <button class="button" onclick="show('popup')">Enviar</button>
         <div id="popup" class="popup">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Eo_circle_orange_checkmark.svg/2048px-Eo_circle_orange_checkmark.svg.png" alt="">
@@ -88,6 +132,62 @@
 }
 .item5{
     
+
+
+
+            <form action="" method="post" class="mensaje" id="formulario">
+            <div class="formulario-grupo" id="grupo-nombre">
+				<label for="nombre" class="formulario-label">Nombre</label>
+				<div class="formulario-grupo-input">
+					<input type="text" class="formulario-input" name="nombre" id="nombre" placeholder="Jose Suarez">
+					<i class="formulario-validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario-input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+			</div>
+           
+			<div class="formulario-grupo" id="grupo-correo">
+				<label for="email" class="formulario-label">Correo Electrónico</label>
+				<div class="formulario-grupo-input">
+					<input type="email" class="formulario-input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario-validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario-input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+
+			<div class="formulario-grupo" id="grupo-telefono">
+				<label for="telefono" class="formulario-label">Teléfono</label>
+				<div class="formulario-grupo-input">
+					<input type="text" class="formulario-input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario-validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario-input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+
+			<div class="formulario-grupo" id="grupo-terminos">
+				<label class="formulario-label">
+					<input class="formulario-checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+            </div>
+            
+			<div class="formulario-mensaje" id="formulario-mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario-grupo formulario-grupo-btn-enviar">
+                <button type="submit" class="formulario-btn" onclick="show('popup')">Enviar</button>
+                <div id="popup" class="popup">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Eo_circle_orange_checkmark.svg/2048px-Eo_circle_orange_checkmark.svg.png" alt="">
+                    <h2>Muchas gracias por contactarse con nosotros!</h2>
+                    <p>Te estaremos contactando en la brevedad</p>
+                    <button href="#" onclick="hide('popup')">cerrar</button>
+                </div>
+			</div>
+        </form>
+
+
 
 
 
