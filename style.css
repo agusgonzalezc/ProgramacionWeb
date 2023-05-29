@@ -28,6 +28,9 @@ form{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+header{
+  display: none;
+}
 /*imagen fondo */
 .hero-imagen {
   background-image: linear-gradient(rgba(0, 0, 0, 0.028), rgba(0, 0, 0, 0.069)), url(https://img2.goodfon.com/wallpaper/nbig/0/6d/gollandiia-niderlandy-amsterdam-kanal.jpg);
@@ -193,7 +196,7 @@ form{
       display: none;
   }
 }
-@media screen and (max-width:750px){
+@media (max-width:750px){
   .footer-texto p {
     font-size: small;
   }
@@ -210,9 +213,20 @@ form{
     padding:20px;
   }
 }
-@media screen and (min-width:750px) {
-  #secciones{
-    height: 100%;
+@media (max-width:1000px) {
+  header{
+    display: block;
+  }
+  header .navbar{
+    background-color:#c1815a;
+  }
+  header .navbar-toggler{
+    text-align:center;
+    left: 50%;
+    margin-left: 50%;
+  }
+  .hero-imagen .navbar{
+    display: none;
   }
 }
 

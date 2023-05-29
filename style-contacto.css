@@ -330,16 +330,18 @@ p{
         display: none;
     }
 }
-@media (max-width:1100px){
+@media (max-width:750px){
     .footer-texto p {
         font-size: x-small;
+    }
+    main{
+        height: fit-content;
     }
     .grid-container{
         grid-template-areas: 'mensaje'
         'informacion'
-        'redes'
-        'espacio';
-        grid-template-rows: 2fr 2fr min-content 1fr;
+        'redes';
+        grid-template-rows: min-content min-content min-content;
     }
     main{
         padding-bottom: 20px;

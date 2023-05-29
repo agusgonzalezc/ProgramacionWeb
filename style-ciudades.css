@@ -197,6 +197,8 @@ main h1{
     visibility: visible;
     transform: none;
     font-weight: bolder;
+    font-size: small;
+    line-height: 1;
   }
   .flex-wrapper .one{
     background-color: rgba(0, 0, 0, .5);
@@ -217,6 +219,7 @@ main h1{
   .flex-wrapper h3{
     color: #f1f1f1;
     font-weight: normal;
+    font-size: medium;
   }
   .flex-wrapper .overlay h2 {
     transform: translate3d(0, 15px, 0);
