@@ -20,3 +20,7 @@ console.log(array1)
 console.log(array1.indexOf(3.14))
 
 //Reverse: devuelve el array en reversa (destruye el array original)
+
+for(let x=0; x<10;x++){
+    console.log(x);
+}

@@ -62,7 +62,7 @@ header{
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.25em;
+  font-size: 3vh;
   font-weight: 150;
 }
 /* SECCIONES */
@@ -197,7 +197,7 @@ header{
       display: none;
   }
 }
-@media (max-width:750px){
+@media screen and (max-width:750px){
   .footer-texto p {
     font-size: small;
   }
@@ -214,7 +214,7 @@ header{
     padding:20px;
   }
 }
-@media (max-width:1000px) {
+@media screen and (max-width:1000px) {
   header{
     display: block;
   }
