@@ -34,67 +34,15 @@
             <div class="grid-container">
                 <div class="item1">
                     <h1 id="titulo">Dejanos tu mensaje</h1>
-                    <form action="" method="post" class="mensaje" id="formulario">
-                        <div class="formulario-grupo" id="grupo-nombre">
-                            <label for="nombre" class="formulario-label">Nombre</label>
-                            <div class="formulario-grupo-input">
-                                <input type="text" class="formulario-input" name="nombre" id="nombre" placeholder="Jose Suarez">
-                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
-                            </div>
-                            <p class="formulario-input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
-                        </div>
-                        <!-- Grupo: Correo Electronico -->
-                        <div class="formulario-grupo" id="grupo-correo">
-                            <label for="email" class="formulario-label">Correo Electrónico</label>
-                            <div class="formulario-grupo-input">
-                                <input type="email" class="formulario-input" name="correo" id="correo" placeholder="correo@correo.com">
-                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
-                            </div>
-                            <p class="formulario-input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-                        </div>
-            
-                        <!-- Grupo: Teléfono -->
-                        <div class="formulario-grupo" id="grupo-telefono">
-                            <label for="telefono" class="formulario-label">Teléfono</label>
-                            <div class="formulario-grupo-input">
-                                <input type="text" class="formulario-input" name="telefono" id="telefono" placeholder="ej.11-9999-9999">
-                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
-                            </div>
-                            <p class="formulario-input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-                        </div>
-
-                        <!-- Grupo: Mensaje-->
-                        <div class="formulario-grupo" id="grupo-mensaje">
-                            <label for="mensaje" class="formulario-label">Mensaje</label>
-                            <div class="formulario-grupo-input">
-                                <input type="text" class="formulario-input mensaje-caja" name="mensaje" id="mensaje" placeholder="Escribi tu mensaje">
-                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
-                            </div>
-                            <p class="formulario-input-error">El mensaje debe contener por lo menos entre 1-290 caracteres</p>
-                        </div>
-
-                        <!-- Grupo: Terminos y Condiciones -->
-                        <div class="formulario-grupo" id="grupo-terminos">
-                            <label class="formulario-label">
-                                <input class="formulario-checkbox" type="checkbox" name="terminos" id="terminos">
-                                Acepto los Terminos y Condiciones
-                            </label>
-                        </div>
-                        
-                        <div class="formulario-mensaje" id="formulario-mensaje">
-                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-                        </div>
-            
-                        <div class="formulario-grupo">
-                            <button type="submit" class="formulario-btn">Enviar</button>
-                            <div id="popup" class="popup">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Eo_circle_orange_checkmark.svg/2048px-Eo_circle_orange_checkmark.svg.png" alt="">
-                                <h2>Muchas gracias por contactarse con nosotros!</h2>
-                                <p>Te estaremos contactando en la brevedad</p>
-                                <button href="#" onclick="hide('popup')">cerrar</button>
-                            </div>
-                        </div>
+                    <form action="" method="post" class="mensaje">
+                        <label for="nombre">Nombre:<br>
+                        <input type="text" placeholder="Nombre" name="user" class="texto-caja"></label><br><br>
+                        <label for="mail">Mail:<br>
+                        <input type="email" placeholder="Mail" class="texto-caja"></label><br><br>
+                        <label for="mensaje">Mensaje:<br>
+                        <input type="text" class="mensaje-caja" placeholder="Mensaje"></label><br><br>
                     </form>
+                    <button class="button" onclick="show('popup')">Enviar</button>
                 </div>
                 <div class="item2">
                     <h1>Tambien nos podes  contactar por estos medios</h1>
@@ -103,9 +51,9 @@
                     <p>Nuestra Redes:</p>
                 </div>
                 <div class="grid-redes flex-redes">
-                    <a href="https://www.instagram.com/netherlands.official/?hl=es"><img src="https://seeklogo.com/images/I/instagram-new-2022-logo-DB6D03CDF0-seeklogo.com.png" alt=""></a>
-                    <a href="https://twitter.com/NLNetherlands?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt=""></a>
-                    <a href="https://www.youtube.com/visitholland"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/YouTube_social_red_circle_%282017%29.svg/2048px-YouTube_social_red_circle_%282017%29.svg.png" alt=""></a>
+                    <a href="https://www.instagram.com/netherlands.official/?hl=es"><img src="instagram.png" alt=""></a>
+                    <a href="https://twitter.com/NLNetherlands?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png" alt=""></a>
+                    <a href="https://twitter.com/NLNetherlands?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="youtube.png" alt=""></a>
                 </div>
                 <div class="espacio">
                     <p>                         </p>
@@ -117,6 +65,9 @@
                 <p>Te estaremos contactando en la brevedad</p>
                 <button href="#" onclick="hide('popup')">cerrar</button>
             </div>
+            <p>
+
+            </p>
         </main>
         <footer>
             <div class="contenedor-footer">

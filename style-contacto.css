@@ -42,7 +42,7 @@ p{
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: 150;
 }
 /* Cajas Dejanos tu mensaje*/
@@ -52,11 +52,22 @@ p{
     text-align: center;
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 6px;
 }
 .texto-caja{
     text-align: center;
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 6px;
+}
+.item1 button{
+    background-color: #eb8642;
+    color: #f1f1f1;
+    border-radius: 6px;
+    border: none;
+    size: auto;
 }
 /* Grid */
 .grid-container{
@@ -65,7 +76,7 @@ p{
     grid-template-areas: 'mensaje informacion'
     'mensaje redes'
     'mensaje espacio';
-    grid-template-rows: min-content min-content 1fr;
+    grid-template-rows: min-content min-content 2.5fr;
 }
 .item1{
     grid-area: mensaje;
@@ -115,10 +126,9 @@ p{
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
 }
-
-
-
-
+footer{
+    padding-top: 50px;
+}
 /* POPUP*/
 .popup {
     display: none;
@@ -164,7 +174,6 @@ p{
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
 }
-/* Styling buttons & webpage */
 .popup button {
     background-color: #eb8642;
     border: none;
@@ -178,115 +187,6 @@ p{
     border: #FFF;
     transition: all 0.3s ease 0s;
 }
-
-
-
-
-
-.formulario-label {
-	display: block;
-	font-weight: 700;
-	padding: 10px;
-	cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-}
-.formulario-grupo-input {
-	position: relative;
-}
-.formulario-input {
-	width: 100%;
-	background: #fff;
-	border: 3px solid transparent;
-	border-radius: 3px;
-	height: 45px;
-	line-height: 45px;
-	padding: 0 40px 0 10px;
-	transition: .3s ease all;
-    text-align:initial;
-}
-.mensaje-caja{
-    height: 200px;
-}
-.formulario-input:focus {
-	border: 3px solid  #eb8642;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
-}
-.formulario-input-error {
-	font-size: 14px;
-	margin-bottom: 0;
-	display: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
-}
-.formulario-input-error-activo {
-	display: block;
-}
-.formulario-validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
-}
-.formulario-checkbox {
-	margin-right: 10px;
-}
-.formulario-grupo-terminos, 
-.formulario-mensaje,
-.formulario-grupo-btn-enviar {
-	grid-column: span 2;
-}
-.formulario-mensaje {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0 15px;
-	border-radius: 3px;
-	display: none;
-    font-family: 'Courier New', Courier, monospace;
-}
-.formulario-mensaje-activo {
-	display: block;
-}
-.formulario-mensaje p {
-	margin: 0;
-}
-.formulario-btn {
-	border: none;
-	cursor: pointer;
-	transition: .1s ease all;
-    background-color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    border-color: transparent;
-    border-radius: 6px;
-    text-align: center;
-}
-.formulario-btn:hover {
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
-}
-.formulario-mensaje-exito-activo {
-	display: block;
-}
-
-/* ----- -----  Estilos para Validacion ----- ----- */
-.formulario-grupo-correcto .formulario-validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
-}
-.formulario-grupo-incorrecto .formulario-label {
-	color: #bb2929;
-}
-.formulariogrupo-incorrecto .formulario-validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
-.formulario-grupo-incorrecto .formulario-input {
-	border: 3px solid #bb2929;
-}
-
-
 
 /* FOOTER */
 .contenedor-footer{
@@ -341,7 +241,7 @@ p{
         grid-template-areas: 'mensaje'
         'informacion'
         'redes';
-        grid-template-rows: min-content min-content min-content;
+        grid-template-rows: max-content min-content min-content;
     }
     main{
         padding-bottom: 20px;

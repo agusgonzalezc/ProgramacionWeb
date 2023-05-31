@@ -17,3 +17,172 @@
 </body>
 
 </html>
+
+
+<!--                    <form action="" method="post" class="mensaje" id="formulario">
+                        <div class="formulario-grupo" id="grupo-nombre">
+                            <label for="nombre" class="formulario-label">Nombre</label>
+                            <div class="formulario-grupo-input">
+                                <input type="text" class="formulario-input" name="nombre" id="nombre" placeholder="Jose Suarez">
+                                <i class="formulario-validacion-estado"></i>
+                            </div>
+                            <p class="formulario-input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+                        </div>
+
+-->
+
+                        <!-- Grupo: Correo Electronico -->
+                             <!--
+                        <div class="formulario-grupo" id="grupo-correo">
+                            <label for="email" class="formulario-label">Correo Electrónico</label>
+                            <div class="formulario-grupo-input">
+                                <input type="email" class="formulario-input" name="correo" id="correo" placeholder="correo@correo.com">
+                                <i class="formulario-validacion-estado"></i>
+                            </div>
+                            <p class="formulario-input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+                    -->
+                        <!-- Grupo: Teléfono -->
+                             <!--
+                        <div class="formulario-grupo" id="grupo-telefono">
+                            <label for="telefono" class="formulario-label">Teléfono</label>
+                            <div class="formulario-grupo-input">
+                                <input type="text" class="formulario-input" name="telefono" id="telefono" placeholder="ej.11-9999-9999">
+                                <i class="formulario-validacion-estado"></i>
+                            </div>
+                            <p class="formulario-input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                        </div>
+                    -->
+                        <!-- Grupo: Mensaje-->
+                             <!--
+                        <div class="formulario-grupo" id="grupo-mensaje">
+                            <label for="mensaje" class="formulario-label">Mensaje</label>
+                            <div class="formulario-grupo-input">
+                                <input type="text" class="formulario-input mensaje-caja" name="mensaje" id="mensaje" placeholder="Escribi tu mensaje">
+                                <i class="formulario-validacion-estado"></i>
+                            </div>
+                            <p class="formulario-input-error">El mensaje debe contener por lo menos entre 1-290 caracteres</p>
+                        </div>
+                    -->
+                        <!-- Grupo: Terminos y Condiciones -->
+                             <!--
+                        <div class="formulario-grupo" id="grupo-terminos">
+                            <label class="formulario-label">
+                                <input class="formulario-checkbox" type="checkbox" name="terminos" id="terminos">
+                                Acepto los Terminos y Condiciones
+                            </label>
+                        </div>
+                        <div class="formulario-mensaje" id="formulario-mensaje">
+                            <p><b>Error:</b> Por favor rellena el formulario correctamente.</p>
+                        </div>
+                        <div class="formulario-grupo">
+                            <button type="submit" class="formulario-btn">Enviar</button>
+                            <div id="popup" class="popup">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Eo_circle_orange_checkmark.svg/2048px-Eo_circle_orange_checkmark.svg.png" alt="">
+                                <h2>Muchas gracias por contactarse con nosotros!</h2>
+                                <p>Te estaremos contactando en la brevedad</p>
+                                <button href="#" onclick="hide('popup')">cerrar</button>
+                            </div>
+                        </div>
+                    </form>
+-->
+<!--.formulario-input:focus {
+	border: 3px solid  #eb8642;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+.formulario-input-error {
+	font-size: 14px;
+	margin-bottom: 0;
+	display: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+.formulario-input-error-activo {
+	display: block;
+}
+.formulario-validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+.formulario-checkbox {
+	margin-right: 10px;
+}
+.formulario-grupo-terminos, 
+.formulario-mensaje,
+.formulario-grupo-btn-enviar {
+	grid-column: span 2;
+}
+.formulario-mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+.formulario-mensaje-activo {
+	display: block;
+}
+.formulario-mensaje p {
+	margin: 0;
+}
+.formulario-btn {
+	border: none;
+	cursor: pointer;
+	transition: .1s ease all;
+    background-color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: transparent;
+    border-radius: 6px;
+    text-align: center;
+}
+.formulario-btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+.formulario-mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario-grupo-correcto .formulario-validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+.formulario-grupo-incorrecto .formulario-label {
+	color: #bb2929;
+}
+.formulariogrupo-incorrecto .formulario-validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario-grupo-incorrecto .formulario-input {
+	border: 3px solid #bb2929;
+}
+
+.formulario-label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+.formulario-grupo-input {
+	position: relative;
+}
+.formulario-input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+    text-align:initial;
+}-->

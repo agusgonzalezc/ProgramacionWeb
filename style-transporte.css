@@ -45,7 +45,7 @@ main p{
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
+  font-size: 3vh;
   font-weight: 150;
 }
 /* CARUSEL */
@@ -150,10 +150,7 @@ main p{
         display: none;
     }
 }
-@media (max-width:750px){
-    body{
-      background-color: gray;
-    }
+@media screen and (max-width:750px){
     .footer-texto p {
         font-size: small;
     }
