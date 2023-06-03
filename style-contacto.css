@@ -13,7 +13,7 @@ footer{
 }
 p{
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
 }
 /* Header */
 .contenedor-header{
@@ -24,11 +24,11 @@ p{
 }
 .contenedor-header h1{
     text-align: left;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Alexandria';
     text-decoration: none;
     font-size: 28px;
     color: white;
-    font-weight:normal;
+    font-weight:300;
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -41,9 +41,9 @@ p{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     font-size: 3vh;
-    font-weight: 150;
+    font-weight: 300;
 }
 /* Cajas Dejanos tu mensaje*/
 .mensaje-caja{
@@ -51,14 +51,14 @@ p{
     height: 200px;
     text-align: center;
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     border: none;
     border-radius: 6px;
 }
 .texto-caja{
     text-align: center;
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     border: none;
     border-radius: 6px;
 }
@@ -94,6 +94,9 @@ p{
     padding-top: 20px;
     margin-bottom: 0;
 }
+.item2 p{
+    color: grey;
+}
 .grid-redes{
     grid-area: redes;
     padding-left: 20px;
@@ -115,16 +118,17 @@ p{
 }
 .grid-container h1{
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-family: 'Alexandria';
+    font-weight: normal;
 }
-.label{
+label{
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
+    color: gray;
 }
 .mensaje{
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
 }
 footer{
     padding-top: 50px;
@@ -172,13 +176,13 @@ footer{
 }
 .popup h2{
     font-size: 24px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
 }
 .popup button {
     background-color: #eb8642;
     border: none;
     border-radius: 6px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     color: white;
 }
 .popup button:hover {
@@ -215,7 +219,7 @@ footer{
     margin-top: 10px;
 }
 .footer-texto p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     color:black;
     font-size: 15px;
 }

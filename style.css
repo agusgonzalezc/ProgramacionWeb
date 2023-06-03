@@ -1,6 +1,6 @@
 /* 
 */
-body, html, main {
+html,body {
     height: 100%;
 }
 html{
@@ -17,19 +17,15 @@ form{
     text-align: center;
     font-size: xx-large;
 }
-.images{
-  width: 500px;
-  height: 300px;
-}
-.elemento{
-    color: white;
-}
 .margenes{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 header{
   display: none;
+}
+#imagen{
+  height: 100vh;
 }
 /*imagen fondo */
 .hero-imagen {
@@ -66,48 +62,52 @@ header{
   font-weight: 150;
 }
 /* SECCIONES */
-#secciones{
+#seccion{
+  height: 100vh;
   background: linear-gradient(rgba(227, 104, 16, 0.434), rgb(230, 125, 6));
+}
+#seccion .contenedor-seccion{
   color: white;
   text-align: center;
-  padding: 20px 0px;
-  height: 100%;
+  padding: 20px;
+  height: 95%;
 }
-#secciones .contenedor-seccion{
-  height: 90%;
-}
-#secciones h1{
-  font-family: 'Courier New', Courier, monospace;
+#seccion .contenedor-seccion h1{
+  font-family: 'Alexandria';
   font-size: 2em;
+  font-weight: 200;
 }
-#secciones p{
+#seccion p{
   display: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
 }
-#secciones button{
+#seccion .seccion button{
   background-color:#eb8642;
   border: none;
   color: white;
   text-align: center;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
 }
-#secciones .seccion{
+#seccion .seccion{
   display: grid;
   grid-template-areas: 'historia ciudades'
   'gastronomia transporte';
-  height: 100%;
   gap: 10px;
   padding: 10px;
+  height: 100%;
 }
-#secciones .carta{
+#seccion .carta{
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-position: center center;
   background-size: cover;
   border-radius: 15px;
+  height: 100%;
 }
-#secciones .carta h2{
+#seccion .carta h2{
   font-size: 2em;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -121,7 +121,7 @@ header{
 }
 .carta:nth-child(3){
   grid-area:gastronomia;
-  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.viajaraholanda.com/img/gastronomia-holanda.jpg");
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.fuiserviajante.com/wp-content/uploads/2019/04/queijo-gouda-comida-holandesa.jpg");
 }
 .carta:nth-child(4){
   grid-area:transporte;
@@ -183,9 +183,6 @@ header{
 /* comentario */
 
 @media (max-width:600px){
-  body{
-    background-color: gray;
-  }
   .footer-texto{
     justify-content: left;
   }
@@ -201,17 +198,20 @@ header{
   .footer-texto p {
     font-size: small;
   }
-  #secciones p{
-    display: block;
+  #seccion{
+    height: fit-content;
   }
-  #secciones .seccion{
+  #seccion .seccion{
     grid-template-areas: 'historia'
     'ciudades'
     'gastronomia'
     'transporte';
   }
-  #secciones .carta{
-    padding:20px;
+  #seccion .seccion p{
+    display: block;
+  }
+  #seccion .carta{
+    padding: 20px;
   }
 }
 @media screen and (max-width:1000px) {
@@ -223,7 +223,6 @@ header{
   }
   header .navbar-toggler{
     text-align:center;
-    left: 50%;
     margin-left: 50%;
   }
   .hero-imagen .navbar{
@@ -231,7 +230,4 @@ header{
   }
 }
 
-
-/*  
-*/
 
