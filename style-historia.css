@@ -10,16 +10,17 @@ main{
 }
 p{
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
+    font-weight: lighter;
 }
 main h1{
     font-size: 24px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     font-weight: bold;
 }
 main h5{
     font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     font-weight: bold;
 }
 /* Header */
@@ -31,11 +32,11 @@ main h5{
 }
 .contenedor-header h1{
     text-align: left;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     text-decoration: none;
     font-size: 28px;
     color: white;
-    font-weight:normal;
+    font-weight:lighter;
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -48,7 +49,7 @@ main h5{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     font-size: 3vh;
     font-weight: 150;
 }
@@ -114,9 +115,10 @@ footer{
     margin-top: 10px;
   }
 .footer-texto p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Alexandria';
     color:black;
     font-size: 15px;
+    font-weight: lighter;
 }
 @media (max-width:650px){
     /* */
@@ -136,13 +138,7 @@ footer{
         'imagen2';
     }
 }
-@media (max-width:750px){
-    body{
-      background-color: gray;
-    }
-    .nav-header{
-      flex-wrap: wrap;
-    }
+@media screen and (max-width:750px){
     .footer-texto p {
         font-size: small;
     }
@@ -151,9 +147,6 @@ footer{
     .video iframe{
         width: 100%;
         height: 100%;
-    }
-    .footer-texto p {
-        font-size: small;
     }
 }
 

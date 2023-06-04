@@ -54,10 +54,12 @@ p{
     font-family: 'Alexandria';
     border: none;
     border-radius: 6px;
+    font-weight: lighter;
 }
 .texto-caja{
     text-align: center;
     font-size: 16px;
+    font-weight: lighter;
     font-family: 'Alexandria';
     border: none;
     border-radius: 6px;
@@ -96,6 +98,7 @@ p{
 }
 .item2 p{
     color: grey;
+    font-weight: lighter;
 }
 .grid-redes{
     grid-area: redes;
@@ -222,13 +225,10 @@ footer{
     font-family: 'Alexandria';
     color:black;
     font-size: 15px;
+    font-weight: lighter;
 }
 /*Media queries */
 @media (max-width:600px){
-    /* */
-    .footer-texto p {
-        font-size: 3px;
-    }
     /* eliminar lo que esta en el footer*/
     .footer-texto{
         display: none;

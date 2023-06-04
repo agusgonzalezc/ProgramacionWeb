@@ -12,11 +12,12 @@ footer{
 }
 p{
   font-size: 16px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
+  font-weight: lighter;
 }
 main h1{
   font-size: 24px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   font-weight: bold;
   text-align: center;
 }
@@ -29,11 +30,11 @@ main h1{
 }
 .contenedor-header h1{
   text-align: left;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
+  font-weight: lighter;
   text-decoration: none;
   font-size: 28px;
   color: white;
-  font-weight:normal;
   padding-top: 20px;
   padding-left: 20px;
 }
@@ -46,9 +47,9 @@ main h1{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
+  font-weight: lighter;
   font-size: 3vh;
-  font-weight: 150;
 }
 /* FOOTER */
 .contenedor-footer{
@@ -77,7 +78,8 @@ main h1{
   margin-top: 10px;
 }
 .footer-texto p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
+  font-weight: lighter;
   color:black;
   font-size: 15px;
 }
@@ -106,8 +108,8 @@ main h1{
   background-color: green;
 }
 .flex-wrapper .three {
-    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/01/17/ppawpd.jpg);
-    background-color: steelblue;
+  background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/01/17/ppawpd.jpg);
+  background-color: steelblue;
 }
 .flex-wrapper .four {
   background-image: url(https://www.holland.com/upload_mm/d/f/c/69557_fullimage_sint-servaas-brug-maas-maastricht-stad-eighty8things-1360%20copy.jpg);
@@ -142,17 +144,17 @@ main h1{
 }
 .flex-wrapper .overlay h2 {
   transform: translate3d(0, -60px, 0);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
+  font-weight: lighter;
   color: #f1f1f1;
-  font-weight: normal;
   font-size: 30px;
 }
 .flex-wrapper .overlay p {
   transform: translate3d(0, 60px, 0);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
+  font-weight: lighter;
   color: #f1f1f1;
-  font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
 }
 .flex-wrapper a:hover .overlay-inner * {
   opacity: 1;
@@ -163,18 +165,12 @@ main h1{
 .flex-wrapper h3{
   font-size: 20px;
   color: rgb(106, 106, 106);
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bolder;
+  font-family: 'Alexandria';
+  font-weight: normal;
   padding-top: 20px;
 }
 @media (max-width:650px){
   /* */
-  body{
-    background-color: gray;
-  }
-  .nav-header{
-    flex-wrap: wrap;
-  }
   /* eliminar lo que esta en el footer*/
   .footer-texto{
       display: none;
@@ -191,14 +187,17 @@ main h1{
   .flex-wrapper a:hover .overlay {
     background-color: transparent;
   }
+  .flex-wrapper .overlay{
+    bottom: 0;
+  }
   .flex-wrapper .overlay h2,
   .flex-wrapper .overlay p {
     opacity: 1;
     visibility: visible;
     transform: none;
-    font-weight: bolder;
+    font-weight: normal;
     font-size: small;
-    line-height: 1;
+    line-height: 2;
   }
   .flex-wrapper .one{
     background-color: rgba(0, 0, 0, .5);
@@ -217,28 +216,12 @@ main h1{
     background-image:linear-gradient(rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.442)), url(https://images.hola.com/imagenes/viajes/2017051994762/Utrecht-guia-48-horas-Holanda/0-450-435/04-Calles-de-Utrecht-t.jpg);
   }
   .flex-wrapper h3{
-    color: #f1f1f1;
-    font-weight: normal;
-    font-size: medium;
-  }
-  .flex-wrapper .overlay h2 {
-    transform: translate3d(0, 15px, 0);
-    padding-top: 20px;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  .flex-wrapper .overlay p {
-    transform: translate3d(0, 18px, 0);
-    font-size: 16px;
-    font-weight: normal;    
+    display: none;
   }
   .flex-wrapper a:hover .overlay-inner *{
     opacity: 1;
   }
   /*Resto*/
-  body{
-    background-color: gray;
-  }
   .footer-texto p {
     font-size: small;
   }

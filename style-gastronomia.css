@@ -10,13 +10,14 @@ main{
 main h1{
   color: black; 
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 24px;
+  font-family: 'Alexandria';
   font-weight: bold;
+  font-size: 24px;
 }
 main p{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   font-size: 16px;
+  font-weight: lighter;
 }
 /* Header */
 .contenedor-header{
@@ -27,11 +28,11 @@ main p{
 }
 .contenedor-header h1{
   text-align: left;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   text-decoration: none;
   font-size: 28px;
   color: white;
-  font-weight:normal;
+  font-weight:lighter;
   padding-top: 20px;
   padding-left: 20px;
 }
@@ -44,7 +45,7 @@ main p{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   font-size: 3vh;
   font-weight: 150;
 }
@@ -62,7 +63,7 @@ main p{
   text-decoration: none;
 }
 #comidas h1{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   font-size: 24px;
 }
 #comidas p{
@@ -87,8 +88,9 @@ main p{
 }
 #comidas .carta h2{
   font-size: 1.5em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   text-decoration: none;
+  font-weight:lighter ;
 }
 .carta:first-child{
   grid-area:bitterballen;
@@ -141,9 +143,10 @@ main p{
   margin-top: 10px;
 }
 .footer-texto p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   color:black;
   font-size: 15px;
+  font-weight: lighter;
 }
 
 @media (max-width:650px){

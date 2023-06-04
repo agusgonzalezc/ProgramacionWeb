@@ -29,7 +29,7 @@ header{
 }
 /*imagen fondo */
 .hero-imagen {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.028), rgba(0, 0, 0, 0.069)), url(https://img2.goodfon.com/wallpaper/nbig/0/6d/gollandiia-niderlandy-amsterdam-kanal.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://img2.goodfon.com/wallpaper/nbig/0/6d/gollandiia-niderlandy-amsterdam-kanal.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,11 +40,12 @@ header{
 .hero-texto {
   text-align: center;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: whitesmoke;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Alexandria';
+  font-weight: lighter;
 }
 /* topnav */
 .navbar-nav{
@@ -57,9 +58,9 @@ header{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   font-size: 3vh;
-  font-weight: 150;
+  font-weight: lighter;
 }
 /* SECCIONES */
 #seccion{
@@ -87,8 +88,11 @@ header{
   border: none;
   color: white;
   text-align: center;
-  text-decoration: none;
+  font-weight: lighter;
   font-family: 'Alexandria';
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #seccion .seccion{
   display: grid;
@@ -109,7 +113,8 @@ header{
 }
 #seccion .carta h2{
   font-size: 2em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
+  font-weight: lighter;
 }
 .carta:first-child{
   grid-area:historia;
@@ -154,9 +159,10 @@ header{
   margin-top: 10px;
 }
 .footer-texto p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alexandria';
   color:black;
   font-size: 15px;
+  font-weight: lighter;
 }
 /*
 .topnav {
