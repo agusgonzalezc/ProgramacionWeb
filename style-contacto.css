@@ -47,22 +47,34 @@ p{
 }
 /* Cajas Dejanos tu mensaje*/
 .mensaje-caja{
-    width: 200px;
-    height: 200px;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: lighter;
     font-family: 'Alexandria';
     border: none;
     border-radius: 6px;
-    font-weight: lighter;
+    height: 200px;
+    width: auto;
+    margin: 10px;
+    outline: none;
+}
+input[type=text]{
+    border: none;
+    background-color: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+    border-color: #eb8642;
 }
 .texto-caja{
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: lighter;
     font-family: 'Alexandria';
-    border: none;
     border-radius: 6px;
+    border: none;
+    margin: 10px;
+    outline:none;
 }
 .item1 button{
     background-color: #eb8642;
@@ -70,6 +82,21 @@ p{
     border-radius: 6px;
     border: none;
     size: auto;
+    margin: 10px;
+}
+.input-grupo{
+    margin: 6px;
+}
+#nombre-error, #email-error, #mensaje-error, #submit-error{
+    font-family: 'Alexandria';
+    font-size: small;
+    color:#ae1c28;
+}
+#nombre-correcto i, #email-correcto i, #mensaje-correcto i{
+    color: #4bc93b;
+}
+#submit-correcto{
+    display: block;
 }
 /* Grid */
 .grid-container{
@@ -99,6 +126,7 @@ p{
 .item2 p{
     color: grey;
     font-weight: lighter;
+    font-size: 18px;
 }
 .grid-redes{
     grid-area: redes;
@@ -125,19 +153,15 @@ p{
     font-weight: normal;
 }
 label{
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Alexandria';
     color: gray;
-}
-.mensaje{
-    font-size: 16px;
-    font-family: 'Alexandria';
 }
 footer{
     padding-top: 50px;
 }
 /* POPUP*/
-.popup {
+.popup{
     display: none;
     position: fixed;
     width: 80vh;
@@ -240,6 +264,7 @@ footer{
     }
     main{
         height: fit-content;
+        padding-bottom: 20px;
     }
     .grid-container{
         grid-template-areas: 'mensaje'
@@ -247,7 +272,7 @@ footer{
         'redes';
         grid-template-rows: max-content min-content min-content;
     }
-    main{
-        padding-bottom: 20px;
+    .popup{
+        width: 50vh;
     }
 }
