@@ -142,6 +142,9 @@ footer{
     .footer-texto p {
         font-size: small;
     }
+    .flex-historia{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:1250px){
     .video iframe{
