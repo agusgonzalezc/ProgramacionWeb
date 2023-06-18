@@ -48,19 +48,18 @@ header{
   font-weight: lighter;
 }
 /* topnav */
-.navbar-nav{
-  margin-left: auto;
-  padding-top: 20px;
-}
 .navbar .navbar-nav .nav-link{
   color: #f1f1f1;
   float: left;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-family: 'Alexandria';
   font-size: 3vh;
   font-weight: lighter;
+}
+.navbar-toggler{
+  margin-left: auto;
+  margin-right: auto;
 }
 /* SECCIONES */
 #seccion{
@@ -164,28 +163,28 @@ header{
   font-size: 15px;
   font-weight: lighter;
 }
-/*
 .topnav {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-direction: row;
-    padding-top: 8x;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-top: 8px;
 }
 .topnav a {
-    float: left;
-    color: whitesmoke;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
+  float: left;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font:'Alexandria';
+  font-size: 2.5vh;
+  font-weight: lighter;
+  letter-spacing: 3px;
 }
 .topnav a:hover {
-    color: black ;
+  color: black ;
 }
-*/
 /* comentario */
 
 @media (max-width:600px){
@@ -227,11 +226,7 @@ header{
   header .navbar{
     background-color:#c1815a;
   }
-  header .navbar-toggler{
-    text-align:center;
-    margin-left: 50%;
-  }
-  .hero-imagen .navbar{
+  .hero-imagen .topnav{
     display: none;
   }
 }
