@@ -184,6 +184,9 @@ footer{
     }
 }
 @media screen and (max-width:1050px){
+    .flex-historia img{
+        max-width: 438px;
+    }
     .grid-imagenes img{
         max-width:400px;
         height: auto;
