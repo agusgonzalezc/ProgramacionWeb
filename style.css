@@ -53,7 +53,7 @@ header{
   float: left;
   text-align: center;
   text-decoration: none;
-  font-family: 'Alexandria';
+  font: 'Alexandria';
   font-size: 3vh;
   font-weight: lighter;
 }
@@ -219,7 +219,7 @@ header{
     padding: 20px;
   }
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1400px) {
   header{
     display: block;
   }
@@ -228,6 +228,13 @@ header{
   }
   .hero-imagen .topnav{
     display: none;
+  }
+  .navbar .navbar-nav .nav-link{
+    font-size: 2.5vh;
+  }
+  .navbar-nav{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
