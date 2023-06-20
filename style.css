@@ -44,9 +44,20 @@ header{
   left: 50%;
   transform: translate(-50%, -50%);
   color: whitesmoke;
-  font-family:'Alexandria';
+  font:'Alexandria';
+}
+.hero-texto h1{
+  letter-spacing: 20px;
+  font-size: 100px;
+  text-decoration: none;
   font-weight: lighter;
 }
+.hero-texto p{
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
 /* topnav */
 .navbar .navbar-nav .nav-link{
   color: #f1f1f1;
@@ -203,6 +214,9 @@ header{
   .footer-texto p {
     font-size: small;
   }
+  .hero-texto h1{
+    letter-spacing: 5px;
+  }
   #seccion{
     height: fit-content;
   }
@@ -219,12 +233,13 @@ header{
     padding: 20px;
   }
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1350px) {
   header{
     display: block;
   }
   header .navbar{
-    background-color:#c1815a;
+    background: rgb(198,123,106);
+    background: linear-gradient(90deg, rgba(198,123,106,0.8337928921568627) 0%, rgba(173,124,92,0.8141850490196079) 25%, rgba(184,132,94,0.7777704831932774) 53%, rgba(212,151,104,0.7945772058823529) 80%, rgba(215,171,117,0.8029805672268908) 100%);
   }
   .hero-imagen .topnav{
     display: none;
@@ -237,5 +252,3 @@ header{
     margin-right: auto;
   }
 }
-
-
